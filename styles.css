@@ -364,3 +364,73 @@ p {
 }
 }
 
+@media (max-width: 430px) {
+    .icons {
+        font-size: 1rem; /* Reduce icon size */
+        gap: 1rem; /* More space between icons */
+        padding-right: 10px; /* Reduce right padding */
+        position: relative; /* Prevents weird alignment */
+        top: 5px; /* Slightly moves icons down */
+
+    }
+
+    .center-div {
+        gap: 0.5rem;
+        
+    }
+
+    .center-div p {
+        font-size: 1.2rem;
+   
+    }
+}
+
+@media (max-width: 375px) {
+    /* Fix for text covering everything */
+    .text_on_image {
+        top: 40%; /* Moves text higher */
+        padding: 5px 8px;
+        max-width: 80%; /* Prevents it from stretching too much */
+    }
+
+    .text_on_image p {
+        font-size: 0.75rem; /* Make text smaller */
+        text-align: center;
+    }
+
+    /* Fix for top container (navigation) */
+    .container {
+        flex-direction: column; /* Stack items to avoid crowding */
+        height: auto; /* Allow flexible height */
+        gap: 0.5rem; /* Reduce spacing */
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .left-div {
+        font-size: 2rem; /* Reduce title size */
+        padding-left: 15px; /* Less padding */
+    }
+
+    .center-div {
+        font-size: 1rem; /* Make text smaller */
+        flex-direction: row; /* Keep it horizontal */
+        gap: 0.5rem; /* Reduce space */
+        justify-content: center;
+    }
+
+    /* Fix for icons overlapping */
+    .icons {
+        font-size: 1rem; /* Make icons smaller */
+        gap: 0.8rem; /* Reduce spacing */
+        padding-right: 10px; /* Reduce right padding */
+    }
+
+    /* Fix for Book Club, Home, and About overlapping */
+    .center-div {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        text-align: center;
+    }
+}
+
